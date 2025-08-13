@@ -1,5 +1,6 @@
 import { CommunityCard } from "@/components/CommunityCard";
 import { CommunityButton } from "@/components/CommunityButton";
+import { StewardsDropdown } from "@/components/StewardsDropdown";
 
 const Index = () => {
   const communityProjects = [
@@ -75,6 +76,11 @@ const Index = () => {
               href={project.href}
             />
           ))}
+        </div>
+
+        {/* Stewards Contact */}
+        <div className="mb-8">
+          <StewardsDropdown />
         </div>
 
         {/* Suggest Button */}
