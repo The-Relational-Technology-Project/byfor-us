@@ -61,7 +61,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Community colors for zine aesthetic
+				coral: 'hsl(var(--coral))',
+				sage: 'hsl(var(--sage))',
+				sunshine: 'hsl(var(--sunshine))',
+				lavender: 'hsl(var(--lavender))',
+				rust: 'hsl(var(--rust))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
