@@ -30,12 +30,12 @@ All colors MUST be HSL.
     --accent: 40 20% 88%;
     --accent-foreground: 25 20% 15%;
 
-    /* Refined community colors */
-    --coral: 12 55% 78%; /* Softer coral */
-    --sage: 95 20% 78%; /* Muted sage */
-    --sunshine: 48 40% 82%; /* Gentle yellow */
-    --lavender: 250 15% 85%; /* Subtle lavender */
-    --rust: 20 45% 68%; /* Modern rust */
+    /* Ocean-inspired community colors */
+    --coral: 12 50% 80%; /* Sandy coral */
+    --sage: 180 25% 75%; /* Foggy sage */
+    --sunshine: 45 45% 85%; /* Beach sunshine */
+    --lavender: 200 20% 82%; /* Misty lavender */
+    --rust: 25 40% 70%; /* Sunset rust */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;

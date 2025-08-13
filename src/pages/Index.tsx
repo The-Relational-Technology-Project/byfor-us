@@ -4,34 +4,34 @@ import { CommunityButton } from "@/components/CommunityButton";
 const Index = () => {
   const communityProjects = [
     {
-      title: "Outer Sunset Today",
-      subtitle: "neighborhood news",
+      title: "Fog Report",
+      subtitle: "daily beach & surf conditions",
       status: "🟢 Live",
-      icon: "📰",
-      color: "coral" as const,
-      href: "#"
-    },
-    {
-      title: "Mutual Aid Outer Sunset", 
-      subtitle: "free fridge map",
-      status: "🟢 Live",
-      icon: "🤝",
+      icon: "🌫️",
       color: "sage" as const,
       href: "#"
     },
     {
-      title: "Sunset Farmers",
-      subtitle: "food collective", 
+      title: "Sunset Mutual Aid", 
+      subtitle: "neighborhood support network",
       status: "🟢 Live",
-      icon: "🥕",
+      icon: "🤝",
+      color: "coral" as const,
+      href: "#"
+    },
+    {
+      title: "Ocean Beach Cleanup",
+      subtitle: "monthly community surf & clean", 
+      status: "🏄‍♀️ Next: Saturday 9am",
+      icon: "🏄‍♂️",
       color: "sunshine" as const,
       href: "#"
     },
     {
-      title: "Sunset Community Supplies",
-      subtitle: "free essential goods",
-      status: "🌙 Sleeping", 
-      icon: "📦",
+      title: "Sunset Seed Share",
+      subtitle: "community garden exchange",
+      status: "🌱 Growing", 
+      icon: "🌱",
       color: "lavender" as const,
       href: "#"
     }
@@ -47,9 +47,9 @@ const Index = () => {
         <p className="text-lg text-foreground/80 mb-8 italic font-medium">
           Built by us, for us.
         </p>
-        <p className="font-zine-body text-base text-foreground/70 leading-relaxed max-w-xs mx-auto">
-          Here's what we've made.<br />
-          Want to suggest something new?
+        <p className="font-zine-body text-base text-foreground/70 leading-relaxed max-w-sm mx-auto">
+          Some things built by us, for us.<br />
+          What else should we create?
         </p>
       </header>
 
