@@ -82,7 +82,7 @@ const Index = () => {
           <CommunityButton 
             variant="suggest" 
             size="lg"
-            href="#suggest"
+            href="/suggest"
             className="w-full sm:w-auto"
           >
             Suggest something new
