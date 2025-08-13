@@ -50,14 +50,8 @@ const Index = () => {
     <div className="min-h-screen bg-background font-zine-body">
       {/* Header */}
       <header className="px-4 pt-16 pb-12 max-w-md mx-auto text-center">
-        <h1 className="font-zine-title text-6xl sm:text-7xl text-foreground mb-6 leading-none tracking-tight">
-          byfor.us
-        </h1>
-        <p className="text-lg text-foreground/80 mb-8 italic font-medium">
-          Built by us, for us.
-        </p>
-        <p className="font-zine-body text-base text-foreground/70 leading-relaxed max-w-sm mx-auto">
-          Some things built by us, for us.<br />
+        <p className="font-zine-body text-lg text-foreground/80 leading-relaxed max-w-sm mx-auto">
+          Some things built in the <span className="font-medium text-foreground">Outer Sunset</span> by us, for us.<br />
           What else should we create?
         </p>
       </header>
