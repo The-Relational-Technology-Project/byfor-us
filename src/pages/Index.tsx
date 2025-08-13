@@ -31,10 +31,10 @@ const Index = () => {
     {
       title: "Map/Make",
       subtitle: "custom map maker",
-      status: "🔧 Building", 
+      status: "🟢 Live", 
       icon: "🗺️",
       color: "lavender" as const,
-      href: "#"
+      href: "https://map-make.lovable.app/"
     },
     {
       title: "Mutual Aid",

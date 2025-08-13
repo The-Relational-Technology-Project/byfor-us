@@ -2,6 +2,7 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const stewards = [
+  { name: "Josh Nesbit", role: "Neighbor", contact: "josh@relationaltechproject.org" },
   { name: "Alex Chen", role: "Outer Sunset Today", contact: "alex@outersunset.today" },
   { name: "Maya Rodriguez", role: "Community Supplies", contact: "maya@communitysupplies.org" },
   { name: "Jordan Kim", role: "Cozy Corner", contact: "@jordanbuilds" },
