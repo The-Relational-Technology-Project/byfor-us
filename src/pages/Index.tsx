@@ -51,7 +51,7 @@ const Index = () => {
       {/* Header */}
       <header className="px-4 pt-16 pb-12 max-w-md mx-auto text-center">
         <p className="font-zine-body text-lg text-foreground/80 leading-relaxed max-w-sm mx-auto">
-          Some things built in the <span className="font-medium text-foreground">Outer Sunset</span> by us, for us.<br />
+          Built in the Outer Sunset. By us, for us.<br />
           What else should we create?
         </p>
       </header>
