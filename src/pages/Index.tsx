@@ -4,36 +4,44 @@ import { CommunityButton } from "@/components/CommunityButton";
 const Index = () => {
   const communityProjects = [
     {
-      title: "Fog Report",
-      subtitle: "daily beach & surf conditions",
+      title: "Outer Sunset Today",
+      subtitle: "what to do today",
       status: "🟢 Live",
-      icon: "🌫️",
-      color: "sage" as const,
-      href: "#"
-    },
-    {
-      title: "Sunset Mutual Aid", 
-      subtitle: "neighborhood support network",
-      status: "🟢 Live",
-      icon: "🤝",
+      icon: "📰",
       color: "coral" as const,
-      href: "#"
+      href: "https://outersunset.today"
     },
     {
-      title: "Ocean Beach Cleanup",
-      subtitle: "monthly community surf & clean", 
-      status: "🏄‍♀️ Next: Saturday 9am",
-      icon: "🏄‍♂️",
+      title: "Community Supplies", 
+      subtitle: "join the sharing party",
+      status: "🟢 Live",
+      icon: "📦",
+      color: "sage" as const,
+      href: "https://communitysupplies.org"
+    },
+    {
+      title: "Cozy Corner",
+      subtitle: "neighbor hub", 
+      status: "🟢 Live",
+      icon: "☕",
       color: "sunshine" as const,
-      href: "#"
+      href: "https://cozycorner.place"
     },
     {
-      title: "Sunset Seed Share",
-      subtitle: "community garden exchange",
-      status: "🌱 Growing", 
-      icon: "🌱",
+      title: "Map/Make",
+      subtitle: "custom map maker",
+      status: "🔧 Building", 
+      icon: "🗺️",
       color: "lavender" as const,
       href: "#"
+    },
+    {
+      title: "Mutual Aid",
+      subtitle: "local pod",
+      status: "🟢 Live", 
+      icon: "🤝",
+      color: "coral" as const,
+      href: "https://sfmutualaid.com"
     }
   ];
 
@@ -55,7 +63,7 @@ const Index = () => {
 
       {/* Main Content */}
       <main className="px-4 pb-16 max-w-md mx-auto">
-        <div className="space-y-5 mb-12">
+        <div className="space-y-4 mb-12">
           {communityProjects.map((project, index) => (
             <CommunityCard 
               key={index}
