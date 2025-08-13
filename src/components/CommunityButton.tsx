@@ -19,8 +19,8 @@ export function CommunityButton({
 }: CommunityButtonProps) {
   const variantClasses = {
     primary: "bg-primary text-primary-foreground hover:bg-primary/90",
-    secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/90",
-    suggest: "bg-rust text-white hover:bg-rust/90 shadow-lg hover:shadow-xl"
+    secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/90", 
+    suggest: "bg-rust text-white hover:bg-rust/90"
   };
 
   const sizeClasses = {
@@ -30,7 +30,7 @@ export function CommunityButton({
   };
 
   const buttonClasses = cn(
-    "btn-tactile font-zine-body font-medium rounded-2xl transition-all duration-200 focus:outline-none focus:ring-4 focus:ring-ring/20",
+    "btn-modern font-zine-body font-medium rounded-2xl focus:outline-none focus:ring-4 focus:ring-ring/20",
     variantClasses[variant],
     sizeClasses[size],
     className

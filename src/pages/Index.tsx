@@ -40,22 +40,22 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background font-zine-body">
       {/* Header */}
-      <header className="px-4 pt-12 pb-8 max-w-md mx-auto text-center">
-        <h1 className="font-zine-title text-5xl sm:text-6xl text-foreground mb-4 leading-none">
+      <header className="px-4 pt-16 pb-12 max-w-md mx-auto text-center">
+        <h1 className="font-zine-title text-6xl sm:text-7xl text-foreground mb-6 leading-none tracking-tight">
           byfor.us
         </h1>
-        <p className="text-lg text-foreground/90 mb-6 italic">
+        <p className="text-lg text-foreground/80 mb-8 italic font-medium">
           Built by us, for us.
         </p>
-        <p className="font-zine-body text-base text-foreground/80 leading-relaxed">
+        <p className="font-zine-body text-base text-foreground/70 leading-relaxed max-w-xs mx-auto">
           Here's what we've made.<br />
           Want to suggest something new?
         </p>
       </header>
 
       {/* Main Content */}
-      <main className="px-4 pb-12 max-w-md mx-auto">
-        <div className="space-y-4 mb-8">
+      <main className="px-4 pb-16 max-w-md mx-auto">
+        <div className="space-y-5 mb-12">
           {communityProjects.map((project, index) => (
             <CommunityCard 
               key={index}
@@ -83,8 +83,8 @@ const Index = () => {
       </main>
 
       {/* Footer */}
-      <footer className="px-4 pb-8 max-w-md mx-auto text-center">
-        <p className="font-zine-body text-sm text-foreground/60 leading-relaxed">
+      <footer className="px-4 pb-12 max-w-md mx-auto text-center">
+        <p className="font-zine-body text-sm text-foreground/55 leading-relaxed">
           Want to make a site like this for your neighborhood?{" "}
           <a 
             href="#remix" 

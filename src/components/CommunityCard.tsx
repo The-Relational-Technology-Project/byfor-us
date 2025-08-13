@@ -28,7 +28,7 @@ export function CommunityCard({
 
   return (
     <div className={cn(
-      "p-6 rounded-2xl border-2 border-black/10 transition-all duration-200 hover:scale-[1.02] hover:shadow-lg",
+      "p-6 rounded-2xl card-modern",
       colorClasses[color],
       className
     )}>
@@ -37,13 +37,13 @@ export function CommunityCard({
           {icon}
         </div>
         <div className="flex-1 min-w-0">
-          <h3 className="font-zine-title text-xl text-foreground mb-1 leading-tight">
+          <h3 className="font-zine-title text-xl text-foreground mb-1.5 leading-tight">
             {title}
           </h3>
-          <p className="font-zine-body text-sm text-foreground/80 mb-2">
+          <p className="font-zine-body text-sm text-foreground/70 mb-3 font-medium">
             {subtitle}
           </p>
-          <div className="flex items-center gap-2 text-sm font-medium">
+          <div className="flex items-center gap-2 text-sm font-medium text-foreground/80">
             {status}
           </div>
         </div>
@@ -53,7 +53,7 @@ export function CommunityCard({
         href={href}
         className="inline-block w-full sm:w-auto"
       >
-        <button className="btn-tactile bg-white/80 hover:bg-white font-zine-body px-6 py-3 rounded-xl text-foreground font-medium text-sm w-full sm:w-auto transition-colors">
+        <button className="btn-modern bg-white/90 hover:bg-white font-zine-body px-6 py-3 rounded-xl text-foreground font-medium text-sm w-full sm:w-auto">
           Visit site
         </button>
       </a>
