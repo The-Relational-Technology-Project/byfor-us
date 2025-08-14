@@ -48,6 +48,15 @@ const Index = () => {
       icon: "🤝",
       color: "coral" as const,
       href: "https://sfmutualaid.com"
+    },
+    {
+      title: "Neighbor Stories",
+      subtitle: "we have a lot to share",
+      status: "🔧 Building",
+      lifecycle: "🌱",
+      icon: "📖",
+      color: "lavender" as const,
+      href: "https://www.neighborstories.org/"
     }
   ];
 
