@@ -8,7 +8,7 @@ const Index = () => {
       title: "Outer Sunset Today",
       subtitle: "what to do today",
       status: "🟢 Live",
-      lifecycle: "🌳",
+      lifecycle: "🌱",
       icon: "📰",
       color: "coral" as const,
       href: "https://outersunset.today"
