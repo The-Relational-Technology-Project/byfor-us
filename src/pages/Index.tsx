@@ -17,7 +17,7 @@ const Index = () => {
       title: "Community Supplies", 
       subtitle: "join the sharing party",
       status: "🟢 Live",
-      lifecycle: "🌿",
+      lifecycle: "🌳",
       icon: "📦",
       color: "sage" as const,
       href: "https://communitysupplies.org"
@@ -26,7 +26,7 @@ const Index = () => {
       title: "Cozy Corner",
       subtitle: "neighbor hub", 
       status: "🟢 Live",
-      lifecycle: "🌲",
+      lifecycle: "🌳",
       icon: "☕",
       color: "sunshine" as const,
       href: "https://cozycorner.place"
