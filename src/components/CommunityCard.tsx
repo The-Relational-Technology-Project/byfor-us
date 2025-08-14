@@ -4,6 +4,7 @@ interface CommunityCardProps {
   title: string;
   subtitle: string;
   status: string;
+  lifecycle: string;
   icon: string;
   color: "coral" | "sage" | "sunshine" | "lavender";
   href?: string;
@@ -13,7 +14,8 @@ interface CommunityCardProps {
 export function CommunityCard({ 
   title, 
   subtitle, 
-  status, 
+  status,
+  lifecycle, 
   icon, 
   color, 
   href = "#",
@@ -52,10 +54,13 @@ export function CommunityCard({
         </div>
       </a>
       
-      {/* Status positioned on the right */}
-      <div className="absolute top-6 right-6">
+      {/* Status and lifecycle positioned on the right */}
+      <div className="absolute top-6 right-6 flex flex-col items-end gap-2">
         <span className="text-xs font-medium text-foreground/80 bg-white/60 px-2 py-1 rounded-full">
           {status}
+        </span>
+        <span className="text-lg" role="img" aria-label="Growth stage">
+          {lifecycle}
         </span>
       </div>
     </div>

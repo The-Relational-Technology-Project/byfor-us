@@ -8,6 +8,7 @@ const Index = () => {
       title: "Outer Sunset Today",
       subtitle: "what to do today",
       status: "🟢 Live",
+      lifecycle: "🌳",
       icon: "📰",
       color: "coral" as const,
       href: "https://outersunset.today"
@@ -16,6 +17,7 @@ const Index = () => {
       title: "Community Supplies", 
       subtitle: "join the sharing party",
       status: "🟢 Live",
+      lifecycle: "🌿",
       icon: "📦",
       color: "sage" as const,
       href: "https://communitysupplies.org"
@@ -24,6 +26,7 @@ const Index = () => {
       title: "Cozy Corner",
       subtitle: "neighbor hub", 
       status: "🟢 Live",
+      lifecycle: "🌲",
       icon: "☕",
       color: "sunshine" as const,
       href: "https://cozycorner.place"
@@ -32,6 +35,7 @@ const Index = () => {
       title: "Map/Make",
       subtitle: "custom map maker",
       status: "🔧 Building", 
+      lifecycle: "🌱",
       icon: "🗺️",
       color: "lavender" as const,
       href: "https://map-make.lovable.app/"
@@ -40,6 +44,7 @@ const Index = () => {
       title: "Mutual Aid",
       subtitle: "local pod",
       status: "🟢 Live", 
+      lifecycle: "🌳",
       icon: "🤝",
       color: "coral" as const,
       href: "https://sfmutualaid.com"
@@ -65,6 +70,7 @@ const Index = () => {
               title={project.title}
               subtitle={project.subtitle}
               status={project.status}
+              lifecycle={project.lifecycle}
               icon={project.icon}
               color={project.color}
               href={project.href}
