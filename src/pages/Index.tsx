@@ -5,18 +5,19 @@ import { useEffect } from "react";
 
 const Index = () => {
   useEffect(() => {
-    // Initialize Ko-fi widget with proper timing
-    const initializeKofi = () => {
+    // Initialize Ko-fi widget safely after component mounts
+    const timer = setTimeout(() => {
       if (typeof (window as any).kofiwidget2 !== 'undefined') {
-        (window as any).kofiwidget2.init('Support the steward', '#72a4f2', 'U7U11KSCED');
-        (window as any).kofiwidget2.draw();
-      } else {
-        // Retry after a short delay if script isn't loaded yet
-        setTimeout(initializeKofi, 100);
+        try {
+          (window as any).kofiwidget2.init('Support the steward', '#72a4f2', 'U7U11KSCED');
+          (window as any).kofiwidget2.draw();
+        } catch (error) {
+          console.error('Ko-fi widget initialization failed:', error);
+        }
       }
-    };
+    }, 500);
     
-    initializeKofi();
+    return () => clearTimeout(timer);
   }, []);
 
   const communityProjects = [
