@@ -1,25 +1,8 @@
 import { CommunityCard } from "@/components/CommunityCard";
 import { CommunityButton } from "@/components/CommunityButton";
 import { StewardsDropdown } from "@/components/StewardsDropdown";
-import { useEffect } from "react";
 
 const Index = () => {
-  useEffect(() => {
-    // Initialize Ko-fi widget safely after component mounts
-    const timer = setTimeout(() => {
-      if (typeof (window as any).kofiwidget2 !== 'undefined') {
-        try {
-          (window as any).kofiwidget2.init('Support the steward', '#72a4f2', 'U7U11KSCED');
-          (window as any).kofiwidget2.draw();
-        } catch (error) {
-          console.error('Ko-fi widget initialization failed:', error);
-        }
-      }
-    }, 500);
-    
-    return () => clearTimeout(timer);
-  }, []);
-
   const communityProjects = [
     {
       title: "Outer Sunset Today",
@@ -110,7 +93,7 @@ const Index = () => {
         </div>
 
         {/* Suggest Button */}
-        <div className="text-center mb-8">
+        <div className="text-center">
           <CommunityButton 
             variant="suggest" 
             size="lg"
@@ -119,11 +102,6 @@ const Index = () => {
           >
             Suggest something new
           </CommunityButton>
-        </div>
-
-        {/* Ko-fi Widget */}
-        <div className="text-center">
-          <div id="kofiwidget2"></div>
         </div>
       </main>
 
