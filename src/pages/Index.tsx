@@ -1,8 +1,17 @@
 import { CommunityCard } from "@/components/CommunityCard";
 import { CommunityButton } from "@/components/CommunityButton";
 import { StewardsDropdown } from "@/components/StewardsDropdown";
+import { useEffect } from "react";
 
 const Index = () => {
+  useEffect(() => {
+    // Initialize Ko-fi widget
+    if (typeof (window as any).kofiwidget2 !== 'undefined') {
+      (window as any).kofiwidget2.init('Support the steward', '#72a4f2', 'U7U11KSCED');
+      (window as any).kofiwidget2.draw();
+    }
+  }, []);
+
   const communityProjects = [
     {
       title: "Outer Sunset Today",
@@ -93,7 +102,7 @@ const Index = () => {
         </div>
 
         {/* Suggest Button */}
-        <div className="text-center">
+        <div className="text-center mb-8">
           <CommunityButton 
             variant="suggest" 
             size="lg"
@@ -102,6 +111,11 @@ const Index = () => {
           >
             Suggest something new
           </CommunityButton>
+        </div>
+
+        {/* Ko-fi Widget */}
+        <div className="text-center">
+          <div id="kofiwidgetcontainer"></div>
         </div>
       </main>
 
