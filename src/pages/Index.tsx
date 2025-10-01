@@ -63,7 +63,7 @@ const Index = () => {
       subtitle: "get your remixed prompt",
       status: "🟢 Live",
       lifecycle: "🌱",
-      icon: "💧",
+      icon: "🪞",
       color: "sage" as const,
       href: "https://chatgpt.com/g/g-68cc7a53c7548191b7c7bf7ab1097039-the-prompt-pond"
     }
