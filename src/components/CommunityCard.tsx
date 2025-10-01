@@ -54,13 +54,10 @@ export function CommunityCard({
         </div>
       </a>
       
-      {/* Status and lifecycle positioned on the right */}
-      <div className="absolute top-6 right-6 flex flex-col items-end gap-2">
+      {/* Status positioned on the right */}
+      <div className="absolute top-6 right-6">
         <span className="text-xs font-medium text-foreground/80 bg-white/60 px-2 py-1 rounded-full">
           {status}
-        </span>
-        <span className="text-lg" role="img" aria-label="Growth stage">
-          {lifecycle}
         </span>
       </div>
     </div>
