@@ -57,6 +57,15 @@ const Index = () => {
       icon: "📖",
       color: "lavender" as const,
       href: "https://www.neighborstories.org/"
+    },
+    {
+      title: "Prompt Pond",
+      subtitle: "AI prompt library",
+      status: "🟢 Live",
+      lifecycle: "🌱",
+      icon: "🐸",
+      color: "sage" as const,
+      href: "https://chatgpt.com/g/g-68cc7a53c7548191b7c7bf7ab1097039-the-prompt-pond"
     }
   ];
 
