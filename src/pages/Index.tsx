@@ -1,6 +1,7 @@
 import { CommunityCard } from "@/components/CommunityCard";
 import { CommunityButton } from "@/components/CommunityButton";
 import { StewardsDropdown } from "@/components/StewardsDropdown";
+import logo from "@/assets/logo.png";
 
 const Index = () => {
   const communityProjects = [
@@ -73,6 +74,11 @@ const Index = () => {
     <div className="min-h-screen bg-background font-zine-body">
       {/* Header */}
       <header className="px-4 pt-16 pb-12 max-w-md mx-auto text-center">
+        <img 
+          src={logo} 
+          alt="By Us, For Us" 
+          className="w-20 h-20 mx-auto mb-6 rounded-2xl shadow-md"
+        />
         <p className="font-zine-body text-lg text-foreground/80 leading-relaxed max-w-sm mx-auto">
           Built in the Outer Sunset. By us, for us.<br />
           What else should we create?
