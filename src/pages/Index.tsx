@@ -116,13 +116,25 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="px-4 pb-12 max-w-md mx-auto text-center">
-        <p className="font-zine-body text-sm text-foreground/55 leading-relaxed">
-          Want to make a site like this for your neighborhood?{" "}
-          <a 
-            href="#remix" 
-            className="text-foreground/80 underline hover:text-foreground transition-colors"
+        <p className="font-zine-body text-sm text-foreground/70 leading-relaxed mb-2">
+          Made in the Sunset – by us, for us 🧡
+        </p>
+        <p className="font-zine-body text-sm text-foreground/70 leading-relaxed mb-2">
+          Contact: <a 
+            href="mailto:hello@relationaltechproject.org" 
+            className="text-foreground/80 hover:text-foreground transition-colors"
           >
-            Remix this page at byfor.us/remix
+            hello@relationaltechproject.org
+          </a>
+        </p>
+        <p className="font-zine-body text-sm text-foreground/70 leading-relaxed">
+          <a 
+            href="https://relationaltechproject.org/remix" 
+            className="text-foreground/80 underline hover:text-foreground transition-colors"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Remix this site for your neighborhood!
           </a>
         </p>
       </footer>
